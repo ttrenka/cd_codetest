@@ -1,0 +1,23 @@
+body {
+    font-family: Lexend;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table thead {
+    text-align: left;
+}
+table thead tr th {
+    text-transform: uppercase;
+    background-color: #ededed;
+}
+table thead tr th,
+table tbody tr td {
+    padding: 8px;
+}

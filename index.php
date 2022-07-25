@@ -43,6 +43,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Crystal D Code Test - Tom Trenka</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800&family=Lexend:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <script type="text/javascript">
             let data = <?php echo str_replace("'", "\'", json_encode($parsed->people, JSON_PRETTY_PRINT)); ?>;
@@ -74,7 +77,7 @@
                 </tbody>
             </table>
         </article>
-        <footer>
+        <!-- footer>
             <h3>For Debug Purposes only</h3>
 <?php
         //  debug
@@ -83,7 +86,7 @@
             echo $out;
             echo '</pre>';
 ?>
-        </footer>
+        </footer -->
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
