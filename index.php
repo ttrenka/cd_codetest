@@ -66,15 +66,7 @@
                         <th data-field="hobby" class="field-hobby">Hobby</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>John Smith</td>
-                        <td>6'2"</td>
-                        <td>10/19/1980</td>
-                        <td>computers, baseball, cats</td>
-                        <td>Gaming</td>
-                    </tr>
-                </tbody>
+                <tbody></tbody>
             </table>
         </article>
         <!-- footer>
