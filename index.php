@@ -59,11 +59,11 @@
             <table id="the-people">
                 <thead>
                     <tr>
-                        <th data-field="name" class="field-name">Name</th>
-                        <th data-field="height" class="field-height">Height</th>
-                        <th data-field="dob" class="field-dob">Date of Birth</th>
-                        <th data-field="interests" class="field-interests">Interests</th>
-                        <th data-field="hobby" class="field-hobby">Hobby</th>
+                        <th data-field="name" class="field-name">Name<span class="sort-arrow"></th>
+                        <th data-field="height" class="field-height">Height<span class="sort-arrow"></th>
+                        <th data-field="dob" class="field-dob">Date of Birth<span class="sort-arrow"></th>
+                        <th data-field="interests" class="field-interests">Interests<span class="sort-arrow"></th>
+                        <th data-field="hobby" class="field-hobby">Hobby<span class="sort-arrow"></th>
                     </tr>
                 </thead>
                 <tbody></tbody>
