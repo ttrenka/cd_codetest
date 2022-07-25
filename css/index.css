@@ -20,6 +20,7 @@ table thead tr th {
     user-select: none;
     font-weight: 200;
     font-size: 12px;
+    color: #000;
 }
 table thead tr th span.sort-arrow {
     position: absolute;
