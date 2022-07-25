@@ -20,4 +20,5 @@ table thead tr th {
 table thead tr th,
 table tbody tr td {
     padding: 8px;
+    border-bottom: 2px solid #ededed;
 }
