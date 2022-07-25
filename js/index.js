@@ -60,7 +60,9 @@ const render = (data, field, dir) => {
     sorted.sort((a, b) => {
         const aValue = dataParsers[field](a[field]);
         const bValue = dataParsers[field](b[field]);
-        return aValue > bValue;
+        if(aValue > bValue) return 1;
+        if(aValue < bValue) return -1;
+        return 0;
     });
     if(dir == 2){
         sorted = sorted.reverse();
@@ -82,7 +84,8 @@ const render = (data, field, dir) => {
 //  do our setup
 const thead = table.querySelector("thead tr");
 thead.addEventListener("click", (e)=>{
-    const t = e.target;
+    let t = e.target;
+    if(t.nodeName.toLowerCase() == "span") t = t.parentNode;
     const field = t.getAttribute("data-field");
     let sorted = t.getAttribute("data-sort"),
         dir = 1;
