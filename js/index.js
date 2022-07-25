@@ -108,5 +108,5 @@ thead.addEventListener("click", (e)=>{
 });
 
 //  finally, the initial render.
-thead.querySelector('th[data-field="name"]').setAttribute("data-sort", "1");
+//  thead.querySelector('th[data-field="name"]').setAttribute("data-sort", "1");
 render(data, "name", 1);
