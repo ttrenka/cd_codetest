@@ -44,7 +44,7 @@ const renderCell = (field, value, dir) => {
 
 //  0 = reset, 1 = asc, 2 = desc
 const render = (data, field, dir) => {
-    if(!dir || dir == 0){
+    if(field && (!dir || dir == 0)){
         //  this is a reset
         field = "name";
         dir = 1;    //  aec
@@ -57,15 +57,17 @@ const render = (data, field, dir) => {
 
     //  sort our data
     let sorted = data.slice();
-    sorted.sort((a, b) => {
-        const aValue = dataParsers[field](a[field]);
-        const bValue = dataParsers[field](b[field]);
-        if(aValue > bValue) return 1;
-        if(aValue < bValue) return -1;
-        return 0;
-    });
-    if(dir == 2){
-        sorted = sorted.reverse();
+    if(field){
+        sorted.sort((a, b) => {
+            const aValue = dataParsers[field](a[field]);
+            const bValue = dataParsers[field](b[field]);
+            if(aValue > bValue) return 1;
+            if(aValue < bValue) return -1;
+            return 0;
+        });
+        if(dir == 2){
+            sorted = sorted.reverse();
+        }
     }
 
     //  rebuild the table body
@@ -109,4 +111,4 @@ thead.addEventListener("click", (e)=>{
 
 //  finally, the initial render.
 //  thead.querySelector('th[data-field="name"]').setAttribute("data-sort", "1");
-render(data, "name", 1);
+render(data);
